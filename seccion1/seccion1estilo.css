@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Poppins:wght@400;500&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+ }
+
+
+.sec1{
+    
+    min-height: 100vh;
+    background: url('imagenesloo.jpg');
+    
+    background-size: cover;  
+    position: relative;
+  
+   
+}
+
+
+
+
+#container {
+  color:white;
+  font-family: 'Jost', sans-serif;
+  font-size:45px;
+  font-weight:bold;
+  padding-top:60px;  
+  display:block;
+  height: 5%;
+  margin-left: 5%;
+ 
+}
+
+#flip {
+  margin-top: -20px;
+  height:60px;
+  overflow:hidden;
+ 
+}
+
+#flip > div > div {
+  color: #f39d19;
+  padding:10px 12px;
+  height:35px;
+  margin-bottom:45px;
+  display:inline-block;
+  
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:transparent;
+}
+#flip div:first-child div {
+  background:transparent;
+}
+#flip div:last-child div {
+  background:transparent;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+.n1{
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-left: 0%;
+
+
+}
+
+.n2{
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-left: 0%;
+  width: 500px;
+  line-height:30px;
+}
+@media (max-width: 800px) {
+   .sec1{
+   background-position: center;
+
+   }
+    .n2{
+        width: 90%;
+    }
+}
+.n3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.boton.cinco{
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: white;
+  margin-top: 10px;
+}
+
+.boton.cinco span {
+	transition: .4s ease-in-out all;
+  display: flex;
+
+  justify-content: center;
+  margin-top: -30px;
+  align-items: center;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  
+}
+.boton.cinco .icono {
+	margin-top: -10px;
+	display: flex;
+  justify-content: right;
+	transition: .3s ease-in-out all;
+  
+  margin-right: 20px;
+	
+}
+.boton.cinco svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.cinco:hover {
+	background: linear-gradient(to right,  #f4c864, #f76860);
+}
+.boton.cinco:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+  margin-right: -5px;
+}
+.boton.cinco:hover span {
+	margin-left: -20px;
+}
+
+  
+ .wave{
+    
+    width: 100%;
+    position: absolute;
+     margin-top: 100px;
+    bottom: 0;
+    left: 0;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+ 

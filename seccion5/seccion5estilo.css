@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+ }
+.sec5{
+    text-align: center;
+    margin: 40px 20px;
+}
+
+
+
+ .text15{
+    font-family: 'Just', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+ }
+ .text25{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+ }
+ .text35{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+ }
+ 
+.boton.cinco{
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    border: black;
+    margin-top: 20px;
+    color: black;
+    background-color: black;
+  }
+  
+  .boton.cinco span {
+      transition: .4s ease-in-out all;
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: -30px;
+    align-items: center;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    
+  }
+  .boton.cinco .icono {
+    margin-top: -10px;
+    display: flex;
+    justify-content: right;
+    transition: .3s ease-in-out all;
+    margin-right: 10px;
+      
+  }
+  .boton.cinco svg {
+      color: #fff;
+      width: 35px;
+      height: 35px;
+  }
+  
+  .boton.cinco:hover {
+      background: linear-gradient(to right,  #f4c864, #f76860);
+  }
+  .boton.cinco:hover .icono {
+      left: calc(100% - 50px);
+      opacity: 1;
+    margin-right: -5px;
+  }
+  .boton.cinco:hover span {
+      margin-left: -20px;
+  }
+
+  @media (min-width: 1030px) {
+    .sec5{
+        text-align: left;
+        display: flex;
+        margin-top: 40px;
+    
+        
+    }
+    .sec52{
+      margin-top: 80px;
+      margin-left: 800px;
+     
+    }
+    .text15{
+      width: 500px;
+    }
+   
+    .carousel-bg{
+     position: relative;
+     right: 102%;
+     top: -140px;
+     margin-left: 2%;
+    
+    }
+    .testimonial-style .carousel-inner > .item {
+      width: 750px;
+ 
+    }
+    .carousel-bg ol{
+      top: 400px;
+      position: absolute;
+    }
+
+   
+  }
+  
+  .carousel-bg {
+    background-color: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* quote */
+  .quote-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 60px;
+    width: 0px;
+  }
+  /* text-style */
+  .testimonial-style .testimonial-caption-style {
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    color: #424242;
+    line-height: 25px;
+    bottom: 40%;
+    text-shadow: none;
+    top: 10%;
+  }
+  
+  .testimonial-style .testimonial-authors {
+    font-family: 'Just', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #424242;
+    line-height: 15px;
+    margin-top: 20px;
+  }
+  /* carousel-height-control */
+  .testimonial-style .carousel-inner > .item {
+    padding-top: auto;
+    padding-bottom: auto;
+    height: 670px;
+    
+  }
+  /* carousel-left-right-control */
+  .testimonial-style .carousel-control.left {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .testimonial-style .carousel-control.right {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .testimonial-style .carousel-control {
+    color: #354052;
+  }
+  .testimonial-style .carousel-control:hover {
+    color: #354052;
+    text-decoration: none;
+    transition: background-color 1s ease;
+  }
+  /* indicators */
+  .testimonial-style .carousel-indicators .active {
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+    transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .testimonial-style .carousel-indicators li {
+    border: 2px solid #354052;
+    background-color: #354052;
+  }
